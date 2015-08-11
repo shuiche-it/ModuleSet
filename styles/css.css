@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.frameProductShow {
+    width: 100%;
+    height: auto;
+    background: white;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.frameWidth {
+    width: 810px;
+    margin: 0 auto;
+}
+
+.productList {
+    width: 250px;
+    height: 175px;
+    background: #ccc;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+.productIntroduction {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    top: -50px;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter: alpha(opacity:0);
+    transition: top 0.5s, opacity 0.5s;
+    -webkit-transition: top 0.5s, opacity 0.5s;
+    -o-transition: top 0.5s, opacity 0.5s;
+}
+
+.productIntroductionBack {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 49px;
+    background: white;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity:70);
+    border-bottom: 1px solid #888888;
+}
+
+.productIntroductionText {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: black;
+}
+
+.frameImgRoll {
+    width: 100%;
+    height: 500px;
+    background: #cccccc;
+    overflow: hidden;
+    position: static;
+}
+
+.ImgRollShow {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto;
+}
+
+@keyframes roll {
+    from {
+        left: 0
+    }
+    to {
+        left: -12159px
+    }
+}
+
+@-webkit-keyframes roll {
+    from {
+        left: 0
+    }
+    to {
+        left: -12159px
+    }
+}
+
+@-moz-keyframes roll {
+    from {
+        left: 0
+    }
+    to {
+        left: -12159px
+    }
+}
+
+@-o-keyframes roll {
+    from {
+        left: 0
+    }
+    to {
+        left: -12159px
+    }
+}
+
+#qmsht {
+    position: absolute;
+    left: 0;
+    animation: roll 300s linear infinite alternate;
+    -webkit-animation: roll 300s linear infinite alternate;
+    -moz-animation: roll 300s linear infinite alternate;
+    -o-animation: roll 300s linear infinite alternate;
+}
